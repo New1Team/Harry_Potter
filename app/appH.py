@@ -6,6 +6,7 @@ from nltk import ne_chunk
 from nltk.tag import pos_tag
 from nltk.tree import Tree
 import csv 
+
 required = [
     'maxent_ne_chunker_tab',
     'maxent_ne_chunker',
@@ -72,7 +73,9 @@ try:
     # ['Harry', 'Potter', 'student', 'Hogwarts', 'School', 'Witchcraft']
     print(chunked)
     
-    output_path = os.path.join(base_path, 'Analysis_Result.csv')
+
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    output_path = os.path.join(current_dir, 'Analysis_Result_Hayoung.csv')
     with open(output_path, 'w', encoding='utf-8-sig', newline='') as f:
         writer = csv.writer(f)
         writer.writerow(['명사', '분류'])   # 헤더
