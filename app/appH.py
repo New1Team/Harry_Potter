@@ -57,7 +57,10 @@ try:
     result = []
     for subtree in chunked:
        if isinstance(subtree, Tree):
+         words_in_entity = [word for word, tag in subtree 
+                            if tag in ['NN', 'NNS', 'NNP', 'NNPS'] and word.isalpha() and len(word) > 1]
           # 묶인 개체명 (Harry Potter 등)
+         if words_in_entity:
           entity = " ".join(word for word, tag in subtree)
           label = NE_KOREAN.get(subtree.label(), subtree.label())
           result.append((entity, label))
