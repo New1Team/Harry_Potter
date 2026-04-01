@@ -34,5 +34,3 @@ FAMILY_NAME_EXCEPTIONS = {
     - 대명사는 한 덩어리로 인식하도록 규칙 추가(ex) Harry / Potter => Harry Potter)
 
 3. 불용어 및 특수문자 제거
-
-
