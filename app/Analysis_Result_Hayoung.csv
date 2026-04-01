@@ -52,7 +52,6 @@ Dursley,인물
 sister,일반명사
 sister,일반명사
 husband,일반명사
-unDursleyish,기관/단체
 Dursleys,기관/단체
 neighbors,일반명사
 Potters,기관/단체
@@ -65,7 +64,6 @@ reason,일반명사
 Potters,기관/단체
 Dudley,인물
 child,일반명사
-Mr.,인물
 Dursley,인물
 dull,일반명사
 gray,일반명사
@@ -1045,7 +1043,6 @@ bundle,일반명사
 blankets,일반명사
 step,일반명사
 number,일반명사
-Good,기관/단체
 luck,일반명사
 Harry,인물
 heel,일반명사
@@ -1852,7 +1849,6 @@ YOU,일반명사
 WONT,일반명사
 BELIEVE,일반명사
 IT,일반명사
-S,인물
 DOING,일반명사
 Dudley,인물
 way,일반명사
@@ -2017,13 +2013,11 @@ Dudley,인물
 gang,일반명사
 Harry Potter,인물
 Philosophers Stone,기관/단체
-THE,기관/단체
 LETTERS,기관/단체
 FROM,일반명사
 NO,일반명사
 ONE,일반명사
 escape,일반명사
-Brazilian,지명(국가/도시)
 boa,일반명사
 constrictor,일반명사
 Harry,인물
@@ -2249,7 +2243,6 @@ notes,일반명사
 books,일반명사
 letter,일반명사
 mistake,일반명사
-Mr. H.,인물
 Potter,일반명사
 Cupboard,기관/단체
 Stairs,일반명사
@@ -3208,7 +3201,6 @@ fingers,일반명사
 Inside,인물
 chocolate,일반명사
 cake,일반명사
-Happy,인물
 Birthday,일반명사
 Harry,인물
 icing,일반명사
@@ -3332,7 +3324,6 @@ Did,일반명사
 yer,일반명사
 parents,일반명사
 Harry,인물
-ALL,기관/단체
 WHAT,일반명사
 Hagrid,인물
 jus,일반명사
@@ -3456,7 +3447,6 @@ Floor,지명(국가/도시)
 Sea,기관/단체
 letter,일반명사
 read,일반명사
-HOGWARTS,기관/단체
 SCHOOL,기관/단체
 WIZARDRY,기관/단체
 Headmaster,일반명사
@@ -4461,7 +4451,6 @@ piece,일반명사
 paper,일반명사
 night,일반명사
 read,일반명사
-HOGWARTS,기관/단체
 SCHOOL,기관/단체
 WIZARDRY,기관/단체
 UNIFORM,일반명사
@@ -5612,7 +5601,6 @@ back,일반명사
 neck,일반명사
 silence,일반명사
 magic,일반명사
-Good,기관/단체
 afternoon,일반명사
 voice,일반명사
 Harry,인물
@@ -5693,7 +5681,6 @@ Oak,일반명사
 inches,일반명사
 bendy,일반명사
 Hagrid,인물
-Good,기관/단체
 wand,일반명사
 half,일반명사
 Mr. Ollivander,인물
@@ -5765,7 +5752,6 @@ tape,일반명사
 measure,일반명사
 heap,일반명사
 floor,일반명사
-Right,인물
 Mr. Potter,인물
 dragon,일반명사
 heartstring,일반명사
@@ -6084,7 +6070,6 @@ Harry,인물
 yes,일반명사
 Thank,지명(국가/도시)
 Uncle Vernon,인물
-Funny,인물
 way,일반명사
 wizards,일반명사
 school,일반명사
@@ -6611,7 +6596,6 @@ Fred,지명(국가/도시)
 No,일반명사
 reminding,일반명사
 day,일반명사
-school.,기관/단체
 All,일반명사
 hair,일반명사
 whistle,일반명사
@@ -7217,7 +7201,6 @@ course,일반명사
 books,일반명사
 background,일반명사
 reading,일반명사
-Modern,지명(국가/도시)
 Magical History,기관/단체
 Rise,기관/단체
 Fall,기관/단체
@@ -7616,7 +7599,6 @@ Hermione,인물
 Everyone,일반명사
 Hagrid,지명(국가/도시)
 boat,일반명사
-Right,인물
 FORWARD,기관/단체
 fleet,일반명사
 boats,일반명사
@@ -8219,7 +8201,6 @@ head,일반명사
 Slytherin,인물
 way,일반명사
 doubt,일반명사
-GRYFFINDOR,기관/단체
 Harry,인물
 hat,일반명사
 word,일반명사
@@ -8564,7 +8545,6 @@ shot,일반명사
 scar,일반명사
 Harry,인물
 forehead,일반명사
-Ouch,인물
 Harry,인물
 hand,일반명사
 head,일반명사
@@ -8650,7 +8630,6 @@ reason,일반명사
 beasts,일반명사
 everyone,일반명사
 prefects,일반명사
-least.,기관/단체
 bed,일반명사
 school,일반명사
 song,일반명사
@@ -9081,7 +9060,6 @@ vampire,일반명사
 Romania,지명(국가/도시)
 days,일반명사
 turban,일반명사
-African,지명(국가/도시)
 prince,일반명사
 zombie,일반명사
 sure,일반명사
@@ -9589,7 +9567,6 @@ cat,일반명사
 Norris,지명(국가/도시)
 ter,일반명사
 Fang,인물
-D,인물
 yeh,일반명사
 time,일반명사
 school,일반명사
@@ -9733,7 +9710,6 @@ lessons,일반명사
 Thursday,일반명사
 Gryffindor,기관/단체
 Slytherin,인물
-Typical,인물
 Harry,인물
 Just,일반명사
 fool,일반명사
@@ -10052,7 +10028,6 @@ Slytherin,일반명사
 girl,일반명사
 Never,인물
 crybabies,일반명사
-Parvati.,기관/단체
 Look,일반명사
 Malfoy,인물
 something,일반명사
@@ -10862,7 +10837,6 @@ lock,일반명사
 door,일반명사
 swung,일반명사
 ears,일반명사
-Which,인물
 way,일반명사
 Peeves,인물
 Filch,인물
@@ -11239,7 +11213,6 @@ bedspread,일반명사
 Harry,인물
 nothing,일반명사
 brooms,일반명사
-Sleek,인물
 mahogany,일반명사
 handle,일반명사
 tail,일반명사
@@ -11577,7 +11550,6 @@ Professor Flitwick,인물
 top,일반명사
 pile,일반명사
 books,일반명사
-Swish,지명(국가/도시)
 flick,일반명사
 magic,일반명사
 words,일반명사
@@ -13028,7 +13000,6 @@ Philosophers Stone,기관/단체
 Rowling,일반명사
 Yeah,일반명사
 mine,일반명사
-Greek,지명(국가/도시)
 chappie,일반명사
 pub,일반명사
 las,일반명사
@@ -13177,7 +13148,6 @@ sorry,일반명사
 Christmas,일반명사
 Ron,인물
 brothers,일반명사
-Mr.,인물
 Weasley,일반명사
 Romania,지명(국가/도시)
 Charlie,인물
@@ -13919,7 +13889,6 @@ Harry,인물
 arm,일반명사
 sight,일반명사
 creeps,일반명사
-Restricted,기관/단체
 Section,기관/단체
 back,일반명사
 library,일반명사
@@ -15577,7 +15546,6 @@ bush,일반명사
 Sorcerer,기관/단체
 Stone,인물
 Hagrid,인물
-O,인물
 course,일반명사
 Number,일반명사
 Number,일반명사
@@ -15725,7 +15693,6 @@ hour,일반명사
 see,일반명사
 rent,일반명사
 eggs,일반명사
-Norwegian,지명(국가/도시)
 rare,일반명사
 Hermione,인물
 Hagrid,지명(국가/도시)
@@ -15846,7 +15813,6 @@ mommy,일반명사
 Hagrid,인물
 Hagrid,인물
 Hermione,인물
-Norwegian,지명(국가/도시)
 Ridgebacks,기관/단체
 grow,일반명사
 Hagrid,인물
@@ -16799,7 +16765,6 @@ didn,일반명사
 move,일반명사
 Hagrid,기관/단체
 gaze,일반명사
-Right,인물
 Hagrid,인물
 gon,일반명사
 one,일반명사
@@ -16852,7 +16817,6 @@ place,일반명사
 bin,일반명사
 staggerin,일반명사
 night,일반명사
-least.,기관/단체
 Fang,인물
 Malfoy,인물
 Fang,시설
@@ -16981,7 +16945,6 @@ Hagrid,인물
 relief,일반명사
 centaur,일반명사
 hand,일반명사
-Good,기관/단체
 evening,일반명사
 Hagrid,지명(국가/도시)
 Ronan,인물
@@ -17003,7 +16966,6 @@ Harry Potter,인물
 Philosophers Stone,기관/단체
 Rowling,일반명사
 Hermione,인물
-Good,기관/단체
 evening,일반명사
 Ronan,인물
 Students,일반명사
@@ -17993,7 +17955,6 @@ Harry,인물
 Ron,인물
 round,일반명사
 Snape,인물
-Good,기관/단체
 afternoon,일반명사
 day,일반명사
 smile,일반명사
@@ -18763,7 +18724,6 @@ lock,일반명사
 moment,일반명사
 lock,일반명사
 flight,일반명사
-Ready,인물
 Harry,인물
 hand,일반명사
 door,일반명사
@@ -18909,7 +18869,6 @@ Look,일반명사
 hurry,일반명사
 hell,일반명사
 Stone,일반명사
-Ready,인물
 Ron,인물
 face,일반명사
 pale,일반명사
@@ -19605,7 +19564,6 @@ face,일반명사
 Albus Dumbledore,인물
 swam,일반명사
 view,일반명사
-Good,기관/단체
 afternoon,일반명사
 Harry,인물
 Dumbledore,인물
