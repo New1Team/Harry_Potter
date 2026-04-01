@@ -13,4 +13,4 @@ if __name__ == '__main__':
   #setFolder()
   #print(nltk.__version__)
   # nltk.download()
-  nltk.download('punkt_tab')
+  nltk.download('words')
