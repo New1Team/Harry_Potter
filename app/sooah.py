@@ -2,18 +2,23 @@ from tensorflow.keras.preprocessing.text import text_to_word_sequence
 from nltk.tokenize import word_tokenize, RegexpTokenizer, sent_tokenize
 from nltk.tag import pos_tag
 from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
 import kss
 from konlpy.tag import Okt
 from konlpy.tag import Kkma
 import argparse
 import os
+import spacy
+import re
 
-with open('../data/Book1.txt', 'r', encoding='UTF-8') as file:
+# with open('../data/Book1.txt', 'r', encoding='UTF-8') as file:
+#   text = file.read()
+with open('../results/Book1.txt', 'r', encoding='UTF-8') as file:
   text = file.read()
 
 # 추출물 저장 폴더 생성
 def setFolder():
-  folder_path = "C:/Users/hi/Desktop/Sooah/Team/Harry_Potter/result"
+  folder_path = "C:/Users/hi/Desktop/Sooah/Team/Harry_Potter/results"
   if not os.path.exists(folder_path):
     os.makedirs(folder_path)
     print("폴더를 생성했습니다.")
@@ -48,6 +53,8 @@ def Word_Tokenization(text, folder_path):
   saveFile(tokens, folder_path, "단어_토큰화.txt")
 
 # Only 호칭/직업 및 대명사 또는 소유격 추출
+nlp = spacy.load("en_core_web_sm")
+
 def Upper_Word_Tokenization(text, folder_path):
   """
   영어 단어 토큰화(Upper_Word_Tokenization)
@@ -62,9 +69,28 @@ def Upper_Word_Tokenization(text, folder_path):
   # +부분이 일반단어 함께 추출
   tokenizer = RegexpTokenizer(pattern)
   tokens = tokenizer.tokenize(text)
-  token2 = tokens
-  saveFile(tokens, folder_path, "규칙_단어_토큰화.txt")
-  return token2
+  stop_words = set(stopwords.words('english')) 
+  result = []
+  for word in tokens: 
+    if word.lower() not in stop_words: 
+      # 표제어 추출 및 불용어 제거
+      doc = nlp(word)
+      lemma = [token.lemma_ for token in doc]
+      final_word = " ".join(lemma).title()
+    #   if "And" in final_word:
+      final_word = final_word.replace(" .",'.').replace("And",'and')
+      if word == 'Rowling':
+        final_word = 'Rowling'
+      result.append(final_word)
+  saveFile(result, folder_path, "복수형제거_규칙_단어_토큰화.txt")
+  return result
+
+'''
+모델 설치 명령어
+uv add spacy
+uv add "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl"
+'''
+
 
 # 규칙_단어_토큰화에서 불용어 삭제
 def Stop_Word_Tokenization(token2, folder_path):
@@ -79,10 +105,9 @@ def Stop_Word_Tokenization(token2, folder_path):
       result.append(word)
   saveFile(result, folder_path, "규칙_단어_불용어삭제.txt")
 
-# 표제어 추출
 
 
-# 문장토큰화 이부분 미완성임
+# 문장토큰화 불필요한 부분 날림
 def Sentence_Tokenization(text, folder_path):
   """
   영어 문장 토큰화(Sentence Tokenization)
@@ -90,9 +115,14 @@ def Sentence_Tokenization(text, folder_path):
   1) 줄바꿈 공백은 제거할 것
   2) Page 로 시작하여 J.K. Rowling 로 끝나는 구문 제거하기
   """
-  pattern = r""
+  # 2)
+  patterns = r"Page\s?\|\s?\d+.*?Rowling"
+  text = re.sub(patterns, "", text, flags=re.IGNORECASE | re.DOTALL)
+  # 1)
+  text = text.replace("\n"," ").replace("\r", " ")
+  text = re.sub(r"\s+", " ", text).strip()
   tokens = sent_tokenize(text)
-  saveFile(tokens, folder_path, "문장_토큰화.txt")
+  saveFile(tokens, folder_path, "Book1.txt")
 
 def Speech_Tagging():
   """
@@ -119,14 +149,15 @@ if __name__ == '__main__':
     
     # 입력된 step 값에 따라 해당 함수 실행
     if args.s == 1:
-      Word_Tokenization(text, result_dir)
+      Upper_Word_Tokenization(text, result_dir)
+    #   Word_Tokenization(text, result_dir)
     elif args.s == 2:
       Sentence_Tokenization(text, result_dir)
-    elif args.s == 3:
-      Speech_Tagging()
-    elif args.s == 4:
-      token2 = Upper_Word_Tokenization(text, result_dir)
-      Stop_Word_Tokenization(token2,result_dir) 
+    # elif args.s == 3:
+    #   Speech_Tagging()
+    # elif args.s == 4:
+    #   token2 = Upper_Word_Tokenization(text, result_dir)
+    #   Stop_Word_Tokenization(token2,result_dir) 
     # elif args.s == 5:
       
     # else:
