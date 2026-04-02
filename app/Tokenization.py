@@ -1,5 +1,6 @@
 import os
 import nltk
+import csv
 
 # =========================================================
 # [apps.py 에서 가져온 요소]
@@ -43,7 +44,6 @@ NE_KOREAN = {
     'CARDINAL'     : '숫자',
     'ORDINAL'      : '순서',
 }
-
 
 # =========================================================
 # [apps.py / appH.py 에 흩어져 있던 nltk 다운로드 통합]
@@ -211,12 +211,14 @@ def build_entity_token_map(tagged_tokens):
     for subtree in chunked:
         if isinstance(subtree, Tree):
             entity_label = NE_KOREAN.get(subtree.label(), subtree.label())
-
-            for word, tag in subtree:
-                if is_valid_noun(word, tag):
-                    entity_token_map[word] = entity_label
+        for word, tag in subtree:
+            if is_valid_noun(word, tag):
+                entity_token_map[word] = entity_label
+    print(chunked)
+    print(chunked)
 
     return entity_token_map
+
 
 
 # =========================================================
@@ -290,7 +292,6 @@ def build_final_tokenization_result(text):
 
     return results
 
-
 # =========================================================
 # [최종 저장]
 # - txt 하나로 저장
@@ -314,7 +315,6 @@ def save_result_txt(output_path, results):
                 f"{item['entity_label']}\n"
             )
 
-
 # =========================================================
 # [main]
 # - apps.py + appj.py + appH.py 규칙을 모두 적용
@@ -325,7 +325,7 @@ def main():
 
     base_path = set_folder()
     file_path = os.path.join(base_path, "Book1.txt")
-    output_path = os.path.join(base_path, "Tokenization_Result.txt")
+    output_path = os.path.join(base_path, "Tokenization_Result.csv")
 
     try:
         text = load_text(file_path)
